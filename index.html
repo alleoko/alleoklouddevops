@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps Engineer - Portfolio</title>
+    <meta name="description" content="Professional DevOps engineer specializing in cloud infrastructure, automation, and continuous deployment. Building scalable solutions with modern tools.">
+    <meta name="author" content="DevOps Engineer">
+    <meta name="keywords" content="DevOps, Cloud Infrastructure, AWS, Docker, Kubernetes, CI/CD, Automation">
+    
+    <meta property="og:title" content="DevOps Engineer - Portfolio">
+    <meta property="og:description" content="Professional DevOps engineer specializing in cloud infrastructure, automation, and continuous deployment.">
+    <meta property="og:type" content="website">
+    
+    <!-- Iconify -->
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="smooth-scroll">
+    <div class="min-h-screen relative overflow-hidden">
+        <!-- Shooting Stars Background -->
+        <div class="fixed inset-0 z-0">
+            <img 
+                src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1440&auto=compress&fit=crop&crop=center,faces" 
+                alt="Starry night sky" 
+                class="w-full h-full object-cover opacity-30"
+            >
+            <div class="absolute inset-0 bg-opacity-60" style="background-color: black;"></div>
+            <!-- Animated shooting stars -->
+            <div class="shooting-star"></div>
+            <div class="shooting-star"></div>
+            <div class="shooting-star"></div>
+            <div class="shooting-star"></div>
+            <div class="shooting-star"></div>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="relative z-20">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold flex items-center">
+                    <span>ALLEOKLOUD</span>
+                    <span class="text-brand-orange">SPACE</span>
+                </div>
+                <div class="hidden xl:flex items-center gap-8">
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <a href="cv.pdf" download>
+                <button class="btn-primary">
+                    Download CV
+                </button></a>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section id="about" class="hero-section relative z-10">
+            <div class="max-w-4xl">
+                <div class="tag mb-6">
+                    DevOps Engineer
+                </div>
+                <h1 class="text-6xl xl:text-7xl font-semibold leading-tight mb-6 hero-title">
+                    Building Scalable
+                    <br>
+                    <span class="text-brand-orange">Infrastructure</span>
+                </h1>
+                <p class="text-xl font-light leading-relaxed mb-8 max-w-2xl text-brand-gray">
+                    Passionate DevOps engineer specializing in cloud infrastructure, automation, and continuous deployment. 
+                    Transforming development workflows with modern tools and practices.
+                </p>
+                <div class="flex gap-4">
+                    <button onclick="scrollToSection('projects')" class="btn-primary">
+                        View Projects
+                    </button>
+                    <button onclick="scrollToSection('contact')" class="btn-outline">
+                        Get in Touch
+                    </button>
+                </div>
+            </div>
+        </section>
+
+   
+        <!-- Projects Section -->
+        <section id="projects" class="relative z-10">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-12">
+                    <div class="tag mb-4">
+                        Featured Projects
+                    </div>
+                    <h2 class="text-4xl xl:text-5xl font-semibold mb-4">Infrastructure Solutions</h2>
+                    <p class="max-w-2xl mx-auto font-light text-brand-gray">
+                        Real-world DevOps projects showcasing automation, scalability, and modern infrastructure practices.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 xl:grid-cols-2 gap-8">
+                    <!-- Project 1 -->
+                    <div class="card project-card group">
+                        <div class="mb-6">
+                            <div class="w-full h-48 rounded-2xl overflow-hidden mb-4">
+                                <img 
+                                    src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1440&auto=compress&fit=crop&crop=center,faces" 
+                                    alt="Multi-Cloud Kubernetes Platform"
+                                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                                >
+                            </div>
+                            <div class="flex items-center gap-3 mb-3">
+                                <div class="p-2 rounded-full bg-brand-orange-bg">
+                                    <iconify-icon icon="logos:kubernetes" class="text-brand-orange" style="font-size: 1.25rem;"></iconify-icon>
+                                </div>
+                                <h3 class="text-2xl font-semibold">Multi-Cloud Kubernetes Platform</h3>
+                            </div>
+                            <p class="font-light mb-4 text-brand-gray">
+                                Designed and implemented a multi-cloud Kubernetes platform supporting AWS, GCP, and Azure with automated failover and cost optimization.
+                            </p>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="tech-tag">Kubernetes</span>
+                                <span class="tech-tag">Terraform</span>
+                                <span class="tech-tag">AWS</span>
+                                <span class="tech-tag">GCP</span>
+                                <span class="tech-tag">Prometheus</span>
+                            </div>
+                            
+                            <div class="grid grid-cols-1 gap-2">
+                                <div class="flex items-center gap-2">
+                                    <iconify-icon icon="mdi:check-circle" class="text-brand-orange text-sm"></iconify-icon>
+                                    <span class="text-sm text-brand-gray">99.99% uptime</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <iconify-icon icon="mdi:check-circle" class="text-brand-orange text-sm"></iconify-icon>
+                                    <span class="text-sm text-brand-gray">40% cost reduction</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <iconify-icon icon="mdi:check-circle" class="text-brand-orange text-sm"></iconify-icon>
+                                    <span class="text-sm text-brand-gray">3 cloud providers</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="flex gap-3">
+                            <button class="btn-primary btn-sm btn-code">
+                                <iconify-icon icon="mdi:github" style="margin-right: 0.5rem;"></iconify-icon>
+                                Code
+                            </button>
+                            <button class="btn-outline btn-sm btn-demo">
+                                <iconify-icon icon="mdi:external-link" style="margin-right: 0.5rem;"></iconify-icon>
+                                Demo
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="card project-card group">
+                        <div class="mb-6">
+                            <div class="w-full h-48 rounded-2xl overflow-hidden mb-4">
+                                <img 
+                                    src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=1440&auto=compress&fit=crop&crop=center,faces" 
+                                    alt="CI/CD Pipeline Automation"
+                                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                                >
+                            </div>
+                            <div class="flex items-center gap-3 mb-3">
+                                <div class="p-2 rounded-full bg-brand-orange-bg">
+                                    <iconify-icon icon="logos:jenkins" class="text-brand-orange" style="font-size: 1.25rem;"></iconify-icon>
+                                </div>
+                                <h3 class="text-2xl font-semibold">CI/CD Pipeline Automation</h3>
+                            </div>
+                            <p class="font-light mb-4 text-brand-gray">
+                                Built comprehensive CI/CD pipelines with automated testing, security scanning, and deployment across multiple environments.
+                            </p>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="tech-tag">Jenkins</span>
+                                <span class="tech-tag">GitLab CI</span>
+                                <span class="tech-tag">Docker</span>
+                                <span class="tech-tag">SonarQube</span>
+                                <span class="tech-tag">Ansible</span>
+                            </div>
+                            
+                            <div class="grid grid-cols-1 gap-2">
+                                <div class="flex items-center gap-2">
+                                    <iconify-icon icon="mdi:check-circle" class="text-brand-orange text-sm"></iconify-icon>
+                                    <span class="text-sm text-brand-gray">70% faster deployments</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <iconify-icon icon="mdi:check-circle" class="text-brand-orange text-sm"></iconify-icon>
+                                    <span class="text-sm text-brand-gray">Zero-downtime releases</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <iconify-icon icon="mdi:check-circle" class="text-brand-orange text-sm"></iconify-icon>
+                                    <span class="text-sm text-brand-gray">50+ microservices</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="flex gap-3">
+                            <button class="btn-primary btn-sm btn-code">
+                                <iconify-icon icon="mdi:github" style="margin-right: 0.5rem;"></iconify-icon>
+                                Code
+                            </button>
+                            <button class="btn-outline btn-sm btn-demo">
+                                <iconify-icon icon="mdi:external-link" style="margin-right: 0.5rem;"></iconify-icon>
+                                Demo
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="card project-card group">
+                        <div class="mb-6">
+                            <div class="w-full h-48 rounded-2xl overflow-hidden mb-4">
+                                <img 
+                                    src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1440&auto=compress&fit=crop&crop=center,faces" 
+                                    alt="Infrastructure as Code Framework"
+                                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                                >
+                            </div>
+                            <div class="flex items-center gap-3 mb-3">
+                                <div class="p-2 rounded-full bg-brand-orange-bg">
+                                    <iconify-icon icon="logos:terraform-icon" class="text-brand-orange" style="font-size: 1.25rem;"></iconify-icon>
+                                </div>
+                                <h3 class="text-2xl font-semibold">Infrastructure as Code Framework</h3>
+                            </div>
+                            <p class="font-light mb-4 text-brand-gray">
+                                Developed reusable Terraform modules and Ansible playbooks for consistent infrastructure provisioning across environments.
+                            </p>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="tech-tag">Terraform</span>
+                                <span class="tech-tag">Ansible</span>
+                                <span class="tech-tag">AWS</span>
+                                <span class="tech-tag">Vault</span>
+                                <span class="tech-tag">GitOps</span>
+                            </div>
+                            
+                            <div class="grid grid-cols-1 gap-2">
+                                <div class="flex items-center gap-2">
+                                    <iconify-icon icon="mdi:check-circle" class="text-brand-orange text-sm"></iconify-icon>
+                                    <span class="text-sm text-brand-gray">90% automation</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <iconify-icon icon="mdi:check-circle" class="text-brand-orange text-sm"></iconify-icon>
+                                    <span class="text-sm text-brand-gray">5 environments</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <iconify-icon icon="mdi:check-circle" class="text-brand-orange text-sm"></iconify-icon>
+                                    <span class="text-sm text-brand-gray">100+ resources</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="flex gap-3">
+                            <button class="btn-primary btn-sm btn-code">
+                                <iconify-icon icon="mdi:github" style="margin-right: 0.5rem;"></iconify-icon>
+                                Code
+                            </button>
+                            <button class="btn-outline btn-sm btn-demo">
+                                <iconify-icon icon="mdi:external-link" style="margin-right: 0.5rem;"></iconify-icon>
+                                Demo
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="card project-card group">
+                        <div class="mb-6">
+                            <div class="w-full h-48 rounded-2xl overflow-hidden mb-4">
+                                <img 
+                                    src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1440&auto=compress&fit=crop&crop=center,faces" 
+                                    alt="Monitoring & Observability Stack"
+                                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                                >
+                            </div>
+                            <div class="flex items-center gap-3 mb-3">
+                                <div class="p-2 rounded-full bg-brand-orange-bg">
+                                    <iconify-icon icon="logos:prometheus" class="text-brand-orange" style="font-size: 1.25rem;"></iconify-icon>
+                                </div>
+                                <h3 class="text-2xl font-semibold">Monitoring & Observability Stack</h3>
+                            </div>
+                            <p class="font-light mb-4 text-brand-gray">
+                                Implemented comprehensive monitoring solution with metrics, logging, and distributed tracing for microservices architecture.
+                            </p>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="tech-tag">Prometheus</span>
+                                <span class="tech-tag">Grafana</span>
+                                <span class="tech-tag">ELK Stack</span>
+                                <span class="tech-tag">Jaeger</span>
+                                <span class="tech-tag">AlertManager</span>
+                            </div>
+                            
+                            <div class="grid grid-cols-1 gap-2">
+                                <div class="flex items-center gap-2">
+                                    <iconify-icon icon="mdi:check-circle" class="text-brand-orange text-sm"></iconify-icon>
+                                    <span class="text-sm text-brand-gray">24/7 monitoring</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <iconify-icon icon="mdi:check-circle" class="text-brand-orange text-sm"></iconify-icon>
+                                    <span class="text-sm text-brand-gray">Sub-second alerts</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <iconify-icon icon="mdi:check-circle" class="text-brand-orange text-sm"></iconify-icon>
+                                    <span class="text-sm text-brand-gray">Full observability</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="flex gap-3">
+                            <button class="btn-primary btn-sm btn-code">
+                                <iconify-icon icon="mdi:github" style="margin-right: 0.5rem;"></iconify-icon>
+                                Code
+                            </button>
+                            <button class="btn-outline btn-sm btn-demo">
+                                <iconify-icon icon="mdi:external-link" style="margin-right: 0.5rem;"></iconify-icon>
+                                Demo
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+             <!-- Skills Section -->
+        <section id="skills" class="relative z-10">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-12">
+                    <div class="tag mb-4">
+                        Technical Skills
+                    </div>
+                    <h2 class="text-4xl xl:text-5xl font-semibold mb-4">Tools & Technologies</h2>
+                    <p class="max-w-2xl mx-auto font-light text-brand-gray">
+                        Expertise in modern DevOps tools and cloud platforms for scalable infrastructure.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-2 xl:grid-cols-4 gap-6">
+                    <div class="card text-center">
+                        <div class="w-12 h-12 mx-auto mb-4 flex items-center justify-center">
+                            <iconify-icon icon="logos:aws" style="font-size: 3rem;"></iconify-icon>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-1">AWS</h3>
+                        <p class="text-sm text-brand-gray">Cloud Platform</p>
+                    </div>
+                    
+                    <div class="card text-center">
+                        <div class="w-12 h-12 mx-auto mb-4 flex items-center justify-center">
+                            <iconify-icon icon="logos:docker-icon" style="font-size: 3rem;"></iconify-icon>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-1">Docker</h3>
+                        <p class="text-sm text-brand-gray">Containerization</p>
+                    </div>
+                    
+                    <div class="card text-center">
+                        <div class="w-12 h-12 mx-auto mb-4 flex items-center justify-center">
+                            <iconify-icon icon="logos:kubernetes" style="font-size: 3rem;"></iconify-icon>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-1">Kubernetes</h3>
+                        <p class="text-sm text-brand-gray">Orchestration</p>
+                    </div>
+                    
+                    <div class="card text-center">
+                        <div class="w-12 h-12 mx-auto mb-4 flex items-center justify-center">
+                            <iconify-icon icon="logos:terraform-icon" style="font-size: 3rem;"></iconify-icon>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-1">Terraform</h3>
+                        <p class="text-sm text-brand-gray">Infrastructure as Code</p>
+                    </div>
+                    
+                    <div class="card text-center">
+                        <div class="w-12 h-12 mx-auto mb-4 flex items-center justify-center">
+                            <iconify-icon icon="logos:jenkins" style="font-size: 3rem;"></iconify-icon>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-1">Jenkins</h3>
+                        <p class="text-sm text-brand-gray">CI/CD</p>
+                    </div>
+                    
+                    <div class="card text-center">
+                        <div class="w-12 h-12 mx-auto mb-4 flex items-center justify-center">
+                            <iconify-icon icon="logos:prometheus" style="font-size: 3rem;"></iconify-icon>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-1">Prometheus/Grafana</h3>
+                        <p class="text-sm text-brand-gray">Monitoring</p>
+                    </div>
+                    
+                    <div class="card text-center">
+                        <div class="w-12 h-12 mx-auto mb-4 flex items-center justify-center">
+                            <iconify-icon icon="logos:ansible" style="font-size: 3rem;"></iconify-icon>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-1">Ansible</h3>
+                        <p class="text-sm text-brand-gray">Configuration Management</p>
+                    </div>
+                    
+                    <div class="card text-center">
+                        <div class="w-12 h-12 mx-auto mb-4 flex items-center justify-center">
+                            <iconify-icon icon="logos:git-icon" style="font-size: 3rem;"></iconify-icon>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-1">Git</h3>
+                        <p class="text-sm text-brand-gray">Version Control</p>
+                    </div>
+                     <div class="card text-center">
+                        <div class="w-12 h-12 mx-auto mb-4 flex items-center justify-center">
+                            <iconify-icon icon="logos:git-icon" style="font-size: 3rem;"></iconify-icon>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-1">SQL</h3>
+                        <p class="text-sm text-brand-gray">Database Query Language</p>
+                    </div>
+                     <div class="card text-center">
+                        <div class="w-12 h-12 mx-auto mb-4 flex items-center justify-center">
+                            <iconify-icon icon="logos:git-icon" style="font-size: 3rem;"></iconify-icon>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-1">Linux</h3>
+                        <p class="text-sm text-brand-gray"> Core Infrastructure / System Admin</p>
+                    </div>
+                     <div class="card text-center">
+                        <div class="w-12 h-12 mx-auto mb-4 flex items-center justify-center">
+                            <iconify-icon icon="logos:git-icon" style="font-size: 3rem;"></iconify-icon>
+                        </div>
+                        <h3 class="text-lg font-semibold mb-1">Python</h3>
+                        <p class="text-sm text-brand-gray">Automation & Scripting</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Contact Section -->
+    <!-- Contact Section -->
+<section id="contact" class="relative z-10">
+    <div class="max-w-4xl mx-auto text-center">
+        <div class="tag mb-4">
+            Get In Touch
+        </div>
+        <div class="mb-6">
+            <img src="myPic.png" alt="Self Portrait" class="mx-auto rounded-full w-36 h-36 object-cover">
+        </div>
+
+        <h2 class="text-4xl xl:text-5xl font-semibold mb-4">Let's Build Something Great</h2>
+        <p class="font-light mb-8 max-w-2xl mx-auto text-brand-gray">
+            Ready to optimize your infrastructure? Let's discuss how we can streamline your deployment processes.
+        </p>
+
+        <div class="flex flex-col xl:flex-row justify-center items-center gap-8 mb-8">
+            <div class="flex items-center gap-3">
+                <div class="p-3 rounded-full bg-brand-orange-bg">
+                    <iconify-icon icon="mdi:email" class="text-brand-orange" style="font-size: 1.25rem;"></iconify-icon>
+                </div>
+                <div class="text-left">
+                    <div class="text-sm text-brand-gray">Email</div>
+                    <div class="font-semibold">alejolenaclan@gmail.com</div>
+                </div>
+            </div>
+            <div class="flex items-center gap-3">
+                <div class="p-3 rounded-full bg-brand-orange-bg">
+                    <iconify-icon icon="mdi:linkedin" class="text-brand-orange" style="font-size: 1.25rem;"></iconify-icon>
+                </div>
+                <div class="text-left">
+                    <div class="text-sm text-brand-gray">LinkedIn</div>
+                    <a href="https://www.linkedin.com/in/alejo-len" target="_blank" rel="noopener noreferrer">
+                        <div class="font-semibold text-brand-white">/in/alejolen</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <button class="btn-primary">
+            Start a Conversation
+        </button>
+    </div>
+</section>
+
+
+        <!-- Footer -->
+        <footer class="relative z-10">
+            <div class="max-w-7xl mx-auto flex flex-col xl:flex-row justify-between items-center gap-4">
+                <div class="font-light text-brand-gray">
+                    © 2025 Alleokloud.Space Built with modern web technologies.
+                </div>
+                <div class="flex items-center gap-6">
+                    <a href="#" class="text-brand-gray hover:text-orange-500 transition">
+                        <iconify-icon icon="mdi:github" style="font-size: 1.25rem;"></iconify-icon>
+                    </a>
+                    <a href="#" class="text-brand-gray hover:text-orange-500 transition">
+                        <iconify-icon icon="mdi:linkedin" style="font-size: 1.25rem;"></iconify-icon>
+                    </a>
+                    <a href="#" class="text-brand-gray hover:text-orange-500 transition">
+                        <iconify-icon icon="mdi:twitter" style="font-size: 1.25rem;"></iconify-icon>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+      
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
