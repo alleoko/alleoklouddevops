@@ -340,14 +340,14 @@ function initMobileMenu() {
     nav.appendChild(mobileMenuButton);
     
     // Create mobile navigation menu
-    const mobileNav = document.createElement('div');
-    mobileNav.className = 'mobile-nav';
-    mobileNav.innerHTML = `
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    `;
+    //const mobileNav = document.createElement('div');
+    //mobileNav.className = 'mobile-nav';
+    //mobileNav.innerHTML = `
+    //    <a href="#about">About</a>
+    //    <a href="#skills">Skills</a>
+    //    <a href="#projects">Projects</a>
+    //    <a href="#contact">Contact</a>
+    //`;
     
     nav.appendChild(mobileNav);
     
