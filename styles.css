@@ -3,11 +3,11 @@
 
 :root {
     --brand-dark: #0D0804;
-    --brand-orange: #EE831C;
+    --brand-orange: #3c83f6;
     --brand-orange-bg: rgba(238,131,28,0.2);
     --brand-gray: #A1A1A1;
     --brand-border: #374151;
-    --brand-yellow: #EAB308;
+    --brand-yellow: #3c83f6;
 }
 
 * {
@@ -402,7 +402,7 @@ body {
 
 /* Hover Effects */
 .hover\:text-orange-500:hover {
-    color: #f97316;
+    color: #4486ef;
 }
 
 .hover\:scale-105:hover {
